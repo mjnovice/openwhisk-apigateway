@@ -18,8 +18,13 @@
 # A Travis CI configuration file.
 
 sudo: required
-dist: xenial
 jdk: openjdk8
+
+arch:
+  - amd64
+  - arm64
+
+dist: xenial
 language: java
 services:
   - docker
